@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Dad Joke Generator</h1>
+        <p class="slogan">Improving the world... one groaner at a time.</p>
+        <div class="main">
+            <img id="dadImage" src="imgs/retro-dad-clipart.jpg" alt="Clipart of a retro dad." onmouseover="this.src='imgs/retro-dad-clipart-wink.jpg'" onmouseout="this.src='imgs/retro-dad-clipart.jpg'">
+            <img class="speechBubble" src="imgs/speech-bubble-final2.png" alt="Clipart of a speech bubble.">
+            <div class="responseBox">
+                <p id="dadQuote">Kids these days don't have a clue what 'funny' is, but you don't have to be one of them! Just ask me for help and I'll spare you from a life of humorless mediocrity.</p>
+            </div>
+        </div>
+        <button type="button" id="jokeButton" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="tellJoke()">Tell me a joke, dad.</button>
+    </div>
+</body>
+</html>
